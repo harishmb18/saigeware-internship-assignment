@@ -1,0 +1,4 @@
+date,heart_rate,sleep_hours,heart_rate_z,heart_rate_anomaly,sleep_hours_z,sleep_hours_anomaly,heart_rate_iqr_anomaly,sleep_hours_iqr_anomaly
+2025-11-06,180,3.2,2.8084421441199243,True,-2.226233390261154,True,True,True
+2025-11-08,74,8.2,-0.427371630626945,False,1.1265277396502218,False,False,True
+2025-11-09,90,4.5,0.06105309008956357,False,-1.3545154964841963,False,False,True

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>{{ heading }}</h2>
+
+    <form method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                value="{{ customer.name if customer else '' }}"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                value="{{ customer.email if customer else '' }}"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value="{{ customer.phone if customer else '' }}"
+                required
+            >
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="{{ url_for('list_customers') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
